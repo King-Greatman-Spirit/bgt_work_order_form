@@ -1,0 +1,160 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    padding: 20px;
+    background-color: #f5f5f5;
+}
+
+.form-container {
+    width: 80%;
+    margin: 20px auto;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border: 3px solid #003366;
+}
+
+.header {
+    margin-bottom: 10px;
+    padding-bottom: 10px;    
+    margin-top: 10px;
+    padding-top: 10px;
+    border: 3px solid #003366;
+}
+
+img {
+    float: left;
+    width: 130px;
+    height: 60px;
+    margin-top: -14px;
+}
+
+.company-name {
+    font-size: 2em;
+    font-weight: bold;
+    color: #003366;
+    text-align: center;
+}
+.title {
+    margin-right: 50px;
+}
+
+.form-title {
+    text-align: center;
+    color: #003366;
+    padding: 2px;
+    border: 3px solid #003366;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.form-section {
+    border: 3px solid #003366;
+    padding: 15px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #444;
+}
+
+.form-group input, 
+.form-group textarea,
+.form-group select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.form-group select {
+    width: 70%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.crew-list {
+    list-style-type: none;
+}
+
+.crew-list li {
+    margin-bottom: 10px;
+    padding: 5px;
+    border-bottom: 1px solid #eee;
+}
+
+.form-footer {
+    margin-top: 40px;
+    font-size: .9em;
+    color: black;
+    text-align: left;
+}
+
+input, textarea {
+    background-color: #d9d9d9;
+}
+
+.form-input {
+    background-color: #d9e8f5;
+}
+
+h3 {
+    text-align: center;
+    color: #003366;
+    padding: 2px;
+    border: 3px solid #003366;
+    font-size: 1.5em;
+}
+
+.side-by-side {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.side-by-side select {
+    background-color: #d9e8f5;
+}
+
+.sign {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+    width: 100%;
+}
+
+select, #sign {
+    width: 100%;
+}
+
+.side-by-side input,
+.side-by-side select {
+    flex: 1;
+    background-color: #d9e8f5;
+}
+
+.crew-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.crew-list .side-by-side {
+    margin-bottom: 10px;
+}

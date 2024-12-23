@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B.G. TECHNICAL LIMITED - Work Order Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="form-container">
+        <div class="header">
+            <div class="company-name">
+                <img src="img/logo.png" alt="Logo">
+                <span class="title">B.G. TECHNICAL LIMITED</span>
+            </div>
+        </div>
+        
+        <h4 class="form-title">Form 202 : BGT WORK ORDER</h4>
+
+        <div class="form-grid">
+            <div class="form-section">
+                <div class="form-group">
+                    <label for="workOrder">Work Order S/N</label>
+                    <input type="number" id="workOrder" name="workOrder">
+                </div>
+
+                <div class="form-group">
+                    <label for="customerCode">Customer Code</label>
+                    <input type="number" id="customerCode" name="customerCode">
+                </div>
+
+                <div class="form-group">
+                    <label for="customerName">Customer Name</label>
+                    <input type="text" id="customerName" name="customerName">
+                </div>
+
+                <div class="form-group">
+                    <label for="contractRef">Contract Ref No</label>
+                    <input type="number" id="contractRef" name="contractRef">
+                </div>
+
+                <div class="form-group">
+                    <label for="poNumber">PO Number</label>
+                    <input type="number" id="poNumber" name="poNumber">
+                </div>
+
+                <div class="form-group">
+                    <label for="sapProject">SAP Project No</label>
+                    <input type="number" id="sapProject" name="sapProject">
+                </div>
+
+                <div class="form-group">
+                    <label for="projectName">Project Name</label>
+                    <input type="text" id="projectName" name="projectName">
+                </div>
+
+                <div class="form-group">
+                    <label for="department">Department</label>
+                    <input type="text" id="department" name="department">
+                </div>
+
+                <div class="form-group">
+                    <label for="plannedDays">Project Planned Days</label>
+                    <input type="number" id="plannedDays" name="plannedDays">
+                </div>
+
+                <div class="form-group">
+                    <label for="startDate">Estimated Start Date</label>
+                    <input type="date" id="startDate" name="startDate">
+                </div>
+
+                <div class="form-group">
+                    <label for="finishDate">Estimated Finished Date</label>
+                    <input type="date" id="finishDate" name="finishDate">
+                </div>
+            </div>
+
+            <div class="form-section">
+                <div class="form-group">
+                    <label for="scopeWork">Scope of Work</label>
+                    <textarea id="scopeWork" name="scopeWork" rows="4" class="form-input"></textarea>
+                </div>
+            
+                <div class="form-group">
+                    <label for="initiatorDetails">Initiator's Name & Signature</label>
+                    <div class="side-by-side">
+                        <input type="text" id="initiatorName" name="initiatorName" class="form-input" placeholder="Enter Name">
+                        <select id="initiatorSignature" name="initiatorSignature" class="form-input">
+                            <option value="" disabled selected>Signature</option>
+                            <option value="signature1">Signature 1</option>
+                            <option value="signature2">Signature 2</option>
+                            <option value="signature3">Signature 3</option>
+                        </select>
+                    </div>
+                </div>
+            
+                <div class="form-group">
+                    <label for="sapOfficerDetails">SAP Officer's Name & Signature</label>
+                    <div class="side-by-side">
+                        <input type="text" id="sapOfficer" name="sapOfficer" class="form-input" placeholder="Enter Name">
+                        <select id="sapOfficerSignature" name="sapOfficerSignature" class="form-input">
+                            <option value="" disabled selected>Signature</option>
+                            <option value="signature1">Signature 1</option>
+                            <option value="signature2">Signature 2</option>
+                            <option value="signature3">Signature 3</option>
+                        </select>
+                    </div>
+                </div>
+            
+                <div class="form-group">
+                    <label for="authorizerDetails">Authorizer's Name & Signature</label>
+                    <div class="side-by-side">
+                        <input type="text" id="authorizer" name="authorizer" class="form-input" placeholder="Enter Name">
+                        <select id="authorizerSignature" name="authorizerSignature" class="form-input">
+                            <option value="" disabled selected>Signature</option>
+                            <option value="signature1">Signature 1</option>
+                            <option value="signature2">Signature 2</option>
+                            <option value="signature3">Signature 3</option>
+                        </select>
+                    </div>
+                </div>
+            
+                <div class="form-group">
+                    <label for="teamLead">Team Lead</label>
+                    <input type="text" id="teamLead" name="teamLead" class="form-input">
+                </div>
+            
+                <div class="form-group">
+                    <label for="crewMembers"></label>Crew Members (Name, Signature and Date)</label>
+                    <input disabled type="text" id="crewMembers" name="crewMembers" class="form-input">
+                </div>
+            
+                <div class="form-group">
+                    <label for="one">1</label>
+                    <div class="side-by-side">
+                        <input type="text" name="crewMember1" placeholder="Enter Name" class="form-input">
+                        <select name="crewMemberSignature1" class="form-input">
+                            <option value="" disabled selected>Signature</option>
+                            <option value="signature1">Signature 1</option>
+                            <option value="signature2">Signature 2</option>
+                            <option value="signature3">Signature 3</option>
+                        </select>
+                        <input type="date" name="crewMemberDate1" class="form-input">
+                    </div>
+                </div>
+            
+                <div class="form-group">
+                    <label for="two">2</label>
+                    <div class="side-by-side">
+                        <input type="text" name="crewMember1" placeholder="Enter Name" class="form-input">
+                        <select name="crewMemberSignature1" class="form-input">
+                            <option value="" disabled selected>Signature</option>
+                            <option value="signature1">Signature 1</option>
+                            <option value="signature2">Signature 2</option>
+                            <option value="signature3">Signature 3</option>
+                        </select>
+                        <input type="date" name="crewMemberDate1" class="form-input">
+                    </div>
+                </div>
+            
+                <div class="form-group">
+                    <label for="three">3</label>
+                    <div class="side-by-side">
+                        <input type="text" name="crewMember1" placeholder="Enter Name" class="form-input">
+                        <select name="crewMemberSignature1" class="form-input">
+                            <option value="" disabled selected>Signature</option>
+                            <option value="signature1">Signature 1</option>
+                            <option value="signature2">Signature 2</option>
+                            <option value="signature3">Signature 3</option>
+                        </select>
+                        <input type="date" name="crewMemberDate1" class="form-input">
+                    </div>
+                </div>
+            
+                <div class="form-group">
+                    <label for="four">4</label>
+                    <div class="side-by-side">
+                        <input type="text" name="crewMember1" placeholder="Enter Name" class="form-input">
+                        <select name="crewMemberSignature1" class="form-input">
+                            <option value="" disabled selected>Signature</option>
+                            <option value="signature1">Signature 1</option>
+                            <option value="signature2">Signature 2</option>
+                            <option value="signature3">Signature 3</option>
+                        </select>
+                        <input type="date" name="crewMemberDate1" class="form-input">
+                    </div>
+                </div>
+            
+                <div class="form-group">
+                    <label for="five">5</label>
+                    <div class="side-by-side">
+                        <input type="text" name="crewMember1" placeholder="Enter Name" class="form-input">
+                        <select name="crewMemberSignature1" class="form-input">
+                            <option value="" disabled selected>Signature</option>
+                            <option value="signature1">Signature 1</option>
+                            <option value="signature2">Signature 2</option>
+                            <option value="signature3">Signature 3</option>
+                        </select>
+                        <input type="date" name="crewMemberDate1" class="form-input">
+                    </div>
+                </div>
+            
+                <!-- <div class="form-group">
+                    <label for="six">6</label>
+                    <input type="text" id="six" name="six" class="form-input">
+                </div>
+            
+                <div class="form-group">
+                    <label for="seven">7</label>
+                    <input type="text" id="seven" name="seven" class="form-input">
+                </div>
+            
+                <div class="form-group">
+                    <label for="eight">8</label>
+                    <input type="text" id="eight" name="eight" class="form-input">
+                </div>
+            
+                <div class="form-group">
+                    <label for="nine">9</label>
+                    <input type="text" id="nine" name="nine" class="form-input">
+                </div>
+            
+                <div class="form-group">
+                    <label for="ten">10</label>
+                    <input type="text" id="ten" name="ten" class="form-input">
+                </div> -->
+            </div>
+        </div>
+
+        <div class="completion-certificate">
+            <h3>Internal Work Completion Certificate</h3>
+            <div class="form-grid">
+                <div class="form-section">
+                    <div class="form-group">
+                        <label for="completionDate">Work Completion Date</label>
+                        <input type="date" id="completionDate" name="completionDate">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="completedScope">Completed Scope</label>
+                        <textarea id="completedScope" name="completedScope" rows="3"></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="additionalScope">Additional Scopes done but not in original scope</label>
+                        <textarea id="additionalScope" name="additionalScope" rows="3"></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="scopesToInvoice">Additional Scopes to invoice</label>
+                        <textarea id="scopesToInvoice" name="scopesToInvoice" rows="3"></textarea>
+                    </div>
+                </div>
+
+                <div class="form-section">
+                    <div class="form-group">
+                        <label for="projectLeaderDetails">Project Leader Name & Signature</label>
+                        <div class="sign">
+                            <input type="text" id="projectLeader" name="projectLeader" class="form-input" placeholder="Enter Name">
+                            <select id="sign" name="projectLeaderSignature" class="form-input">
+                                <option value="" disabled selected>Signature</option>
+                                <option value="signature1">Signature 1</option>
+                                <option value="signature2">Signature 2</option>
+                                <option value="signature3">Signature 3</option>
+                            </select>
+                        </div>
+                    </div>
+                
+                    <div class="form-group">
+                        <label for="operationsManagerDetails">Operations Manager Name & Signature</label>
+                        <div class="sign">
+                            <input type="text" id="operationsManager" name="operationsManager" class="form-input" placeholder="Enter Name">
+                            <select id="sign" name="operationsManagerSignature" class="form-input">
+                                <option value="" disabled selected>Signature</option>
+                                <option value="signature1">Signature 1</option>
+                                <option value="signature2">Signature 2</option>
+                                <option value="signature3">Signature 3</option>
+                            </select>
+                        </div>
+                    </div>
+                
+                    <div class="form-group">
+                        <label for="invoicingOfficerDetails">Invoicing Officer's Name & Signature</label>
+                        <div class="sign">
+                            <input type="text" id="invoicingOfficer" name="invoicingOfficer" class="form-input" placeholder="Enter Name">
+                            <select id="sign" name="invoicingOfficerSignature" class="form-input">
+                                <option value="" disabled selected>Signature</option>
+                                <option value="signature1">Signature 1</option>
+                                <option value="signature2">Signature 2</option>
+                                <option value="signature3">Signature 3</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-footer">
+            BGT Form 202, Rev. 00, 23rd May 2018
+        </div>
+    </div>
+</body>
+</html>
